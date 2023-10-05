@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 # Fabfile to delete out-of-date archives - func do_clean
-# usage: fab -f 100-clean_web_static.py do_clean:number=2 -i my_ssh_private_key -u ubuntu > /dev/null 2>&1
 import os
 from fabric.api import *
 
