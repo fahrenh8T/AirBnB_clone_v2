@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 # fabfile - generates a .tgz archive from the contents of web_static folder
+# usage: fab -f 1-pack_web_static.py do_pack
 import os.path
 from datetime import datetime
 from fabric.api import local
