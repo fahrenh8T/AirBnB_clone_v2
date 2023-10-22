@@ -7,9 +7,9 @@ from models.place import place_amenity
 
 
 class Amenity(BaseModel):
-   if store == 'db':
-    __tablename__ = "amenities"
-    name = Column(String(128), nullable=False)
-    place_amenities = relationship("Place", secondary=place_amenity)
-   else:
-     name = ""
+    if store == 'db':
+        __tablename__ = "amenities"
+        name = Column(String(128), nullable=False)
+        place_amenities = relationship("Place", secondary=place_amenity)
+   else Exception:
+        name = ""
